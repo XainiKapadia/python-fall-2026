@@ -1,25 +1,20 @@
-print("Salam from our first class.")
-import requests
-
-# Mumbai coordinates
-LATITUDE = 19.0760
-LONGITUDE = 72.8777
-
-url = (
-    f"https://api.open-meteo.com/v1/forecast?"
-    f"latitude={LATITUDE}&longitude={LONGITUDE}"
-    f"&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m"
-)
-
-response = requests.get(url)
-response.raise_for_status()
-
-data = response.json()
-current = data["current"]
-
-print("Today's Weather")
-print("-" * 20)
-print(f"Temperature: {current['temperature_2m']}°C")
-print(f"Humidity: {current['relative_humidity_2m']}%")
-print(f"Wind Speed: {current['wind_speed_10m']} km/h")
-print(f"Weather Code: {current['weather_code']}")
+stdCode = 34551001
+stdMidterm = 80
+stdFinal = 98
+stdName = 'Mohammed'
+stdLastname = 'Ali'
+print('Student Name: Mohammed Ali - Student Code:' + str(stdCode))
+print('Student Grade Final:' + str(stdFinal))
+print(stdName, stdLastname)
+#print(stdFinal+''+stdLastname)
+print(stdFinal==stdMidterm)
+print(stdFinal!=stdMidterm)
+print('Average (Midterm and Final) is:' + str((stdMidterm + stdFinal)/2))
+#stdCode = 1
+#print('New Student Code:', stdCode)
+print((not(stdName=='Ayesha')or(stdFinal>stdMidterm)) and (stdMidterm!=stdFinal))
+print('345' in str(stdCode))
+print('345' not in str(stdCode))
+print(5 * 2 % 5)
+print('Final is : ' + str(stdFinal))
+print('3' * 3)
