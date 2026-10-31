@@ -73,7 +73,7 @@ print(type(msg))
 
 #12. PREDICT the data type of each value below, then check with type():
 # 10 10.0 "10" [10] (10,) {10} {'a':10} True
-# My guesses: int, float, str, list, tuple, set, dictionary, bool
+# My guesses: int, float, str, list, tuple, set, dict, bool
 
 print(type(10))
 print(type(10.0))
