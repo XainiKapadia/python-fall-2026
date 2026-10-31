@@ -52,7 +52,7 @@ print(NewstdMidterm)
 print(type(NewstdMidterm))
 
 #8. PREDICT: What will print(int(stdFinal)) show? Does it round up?
-# My guess: yes
+# My guess: 98, yes
 
 print(int(stdFinal))
 
@@ -73,7 +73,7 @@ print(type(msg))
 
 #12. PREDICT the data type of each value below, then check with type():
 # 10 10.0 "10" [10] (10,) {10} {'a':10} True
-# My guesses: int, float, string, list, tupple, set, dictionary, bool
+# My guesses: int, float, str, list, tuple, set, dictionary, bool
 
 print(type(10))
 print(type(10.0))
@@ -97,7 +97,7 @@ print(type(stdMidterm / 2))
 #15. Fill in the blank so the output is <class 'tuple'>?
 #print(type(_))
 
-print(type(stdBirthDate))
+print(type((9,)))
 
 #BONUS: Why does print(type(1)) show <class 'int'> and not <class 'tuple'>?
 # My Answer: it doesnt have a comma 
